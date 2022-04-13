@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap');
+
+table {
+    font-family: 'Mulish', sans-serif;
+
+}
+
+td:first-child {
+
+    font-weight: 900;
+
+}
+
+tr:first-child td:first-child {
+    color: brown;
+
+}
+
+tr,td,table,th {
+border:1px solid black;
+ 
+
+}
+
+td { padding: 15px; width: 50%;}
+
+img { width: 100%;}
+table {
+    
+    empty-cells: hide;
+    /*solo funciona el empty-cells con el valor hide cuando el border-collapse está en separat*/
+    border-collapse: collapse;
+}
+
+
+
+

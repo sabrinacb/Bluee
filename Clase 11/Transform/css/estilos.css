@@ -1,0 +1,83 @@
+div {
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+    border: 1px solid black;
+
+ 
+
+}
+
+
+div:nth-child(2) {
+  transform-origin: 100px;
+    background-color: green;
+    /*transform: rotate(45deg);*/
+    transform: rotate(0.6turn);
+
+
+}
+
+div:first-child p {
+
+    transform: rotate(65deg);
+    color: white;
+    background-color: black;
+
+
+}
+
+
+div:nth-child(3) {
+
+    background-color: lightblue;
+    transform: rotateX(-200deg)
+}
+
+div:nth-child(4) {
+
+    background-color: orange;
+    transform: rotateY(250deg)
+}
+
+div:nth-child(5) {
+
+    background-color: pink;
+    transform: rotateZ(300deg)
+        /*QUE SI TRABAJAMOS CON UN PLANO SIN PROFUNDIDAD ESTA TRANSFORMACIÓN CON ESTE EJE NO TIENE SENTIDO*/
+
+}
+
+div:nth-child(6) {
+
+    background-color: yellow;
+    /*puedo trabajar las transformaciones de diferentes tipos en un mismo shorthand*/
+    transform: rotate(25deg) rotateX(200deg) rotateY(120deg) skew(25deg,15deg);
+
+}
+
+
+div:nth-child(7) {
+    transform: translate(200px, 50px);}
+
+
+div:nth-child(8){
+background-color: green; 
+
+transform: scaleY(3);
+
+
+}
+
+
+div:nth-child(9){
+    background-color: blue; 
+    transform: skewY(30deg);
+    
+    
+    }
