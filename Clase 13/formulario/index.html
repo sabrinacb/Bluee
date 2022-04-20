@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <form id="formulario" method="post" action="php/codigo.php">
+        <label for="nombre"> Nombre <span> * </span></label>
+        <input placeholder="Juan Carlos " required id="nombre" name="nombre" type="text">
+        <label> Apellido
+            <input name="apellido" type="text"></label>
+        <label for="edad"> Edad</label>
+        <input id="edad" name="edad" type="number" min="18" max="90">
+
+
+        <label for="email">Email <span> * (se puede trabajar con múltiples direcciones) </span></label>
+        <input placeholder="info1@mimail.com,info2@mimail.com" multiple required title="el campo deber ser a x b"
+            type="email" name="email" id="email">
+
+        <label> Entradas</label>
+        <input name="entradas" type="number" step="3" min="1" max="10">
+        <label> Contraseña (Tiene que tener una letra mayúscula, mínúscula y un número) </label>
+        <input name="password" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+
+        <label>Código Postal (El código posta tiene que tener números mínimo 6 máximo 10)</label>
+
+        <input name="cp" type="number" pattern="[0-9]{6,10}">
+
+        <label>Estado civil</label> <br>
+        <label>Casado<input name="estado" type="radio" value="casado"></label>
+        <label>Soltero
+            <input checked value="soltero" name="estado" type="radio"></label>
+
+        <label>Intereses</label><br>
+        <label>Deportes
+            <input type="checkbox" name="intereses" value="deportes"></label>
+        <label>Lectura
+            <input type="checkbox" name="intereses" value="lectura"></label>
+        <label>Viajes
+            <input checked type="checkbox" name="intereses" value="viajes"></label>
+        <br>
+        <label for="pais">pais</label>
+        <select name="pais" id="pais" required>
+            <option value=" "> Seleccionar </option>
+            <option value="argentina">Argentina</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="brasil">Brasil</option>
+        </select>
+        <br>
+
+        <label for="idiomas">Idiomas</label>
+        <select multiple size="2" name="idiomas" id="idiomas">
+
+            <option value="ingles">Inglés</option>
+            <option value="frances">Francés</option>
+            <option value="espaniol">Español</option>
+
+        </select>
+
+        <label for="nacimiento">Nacimiento</label>
+
+        <input type="date" name="nacimiento" id="nacimiento">
+      
+<label for="color">Seleccioná tu color favorito</label>
+<input type="color" name="color">
+<label for="comentarios">Comentarios</label>
+<textarea name="comentarios" id="comentarios"></textarea>
+<label for="archivo">Cargar foto</label>
+<input multiple type="file">
+<button>Enviar 1</button>   
+    </form>
+
+
+
+
+
+</body>
+
+</html>
