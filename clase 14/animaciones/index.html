@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<main>
+<div id="contenedor">
+    <h1>Animaciones</h1>
+</div> 
+</main>
+<button onclick="reproducir();">Play</button>
+<button onclick="pausar();">Pausa</button>
+<button onclick="tiempo();">Poner menos tiempo</button>
+
+<script>
+function reproducir(){
+document.getElementById('contenedor').style.animationPlayState = 'running'
+}
+
+
+function pausar(){
+document.getElementById('contenedor').style.animationPlayState = 'paused'
+}
+
+
+function tiempo(){
+
+    document.getElementById('contenedor').style.animationDuration = '5s'
+
+}
+
+</script>
+
+
+</body>
+</html>
